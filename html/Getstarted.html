@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin/Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/css/Getstarted.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="logo">Hostel<span class="yellow">Lives</span></a>
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/index.html#services">Services</a>
+            <a href="/index.html#about">About Us</a>
+            <a href="/html/contactUs.html">Contact Us</a>
+            <a href="/html/GetStarted.html" class="btn">Get Started</a>
+
+        </nav>
+
+        <!-- Hamburger -->
+        <div class="hamburger">
+            <img src="./images/grid-outline.svg" alt="" />
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="header-container">
+        <h1>Log-In</h1>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h4>Admin Log-In</h4>
+                <h1>Admin</h1>
+                <li>Admin Log-In</li>
+                <!-- <li>2 Users Allowed</li>
+                    <li>Send up to 30GB</li> -->
+                <a href="/html/Login.html">
+                    <div class="button">Log-In</div>
+                </a>
+            </div>
+
+            <div class="pricing-card">
+                <h4>Student Log-In</h4>
+                <h1>Student</h1>
+                <li>Only Student</li>
+                <!-- <li>5 Users Allowed</li>
+                    <li>Send up to 50GB</li> -->
+                <a href="/html/Login.html">
+                    <div class="button">Log-In</div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener("click", () => {
+            navbar.classList.toggle("show");
+        });
+
+        const header = document.querySelector(".header");
+        const scrollLink = document.querySelectorAll(".navbar a:not(:last-child)");
+
+
+    </script>
+
+</body>
+
+</html>
